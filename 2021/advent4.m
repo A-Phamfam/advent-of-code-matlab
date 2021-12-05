@@ -2,7 +2,6 @@ clear all
 close all
 
 %% Part 1
-
 bingo_numbers = readlines("input4.txt");
 bingo_numbers = str2num(bingo_numbers(1));
 hands = readmatrix("input4.txt");
@@ -28,8 +27,9 @@ for i = 1:numel(bingo_numbers)
 end
 
 sum(hands{j}(~winning_elements)) * bingo_numbers(i)
-%% Part 2
 
+
+%% Part 2
 bingo_numbers = readlines("input4.txt");
 bingo_numbers = str2num(bingo_numbers(1));
 hands = readmatrix("input4.txt");
@@ -57,8 +57,8 @@ end
 sum( hands{hand_won_order(end)}(~last_hand_winning_elems) )...
     * bingo_numbers(i)
 
-%% Part 1 w/o Cells
 
+%% Part 1 w/o Cells
 bingo_numbers = readlines("input4.txt");
 bingo_numbers = str2num(bingo_numbers(1));
 hands = readmatrix("input4.txt");
@@ -79,8 +79,8 @@ end
 sum( hands(logical(~winning_elements .* hands_won)) )...
     * bingo_numbers(i)
 
-%% Part 2 w/o Cells
 
+%% Part 2 w/o Cells
 bingo_numbers = readlines("input4.txt");
 bingo_numbers = str2num(bingo_numbers(1));
 hands = readmatrix("input4.txt");

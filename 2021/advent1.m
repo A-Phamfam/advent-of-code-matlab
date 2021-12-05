@@ -2,6 +2,7 @@
 x = readmatrix('input1.txt');
 output = sum(diff(x) > 0)
 
+
 %% Part 2
 x = readmatrix('input1.txt');
 y = movsum(x,3);

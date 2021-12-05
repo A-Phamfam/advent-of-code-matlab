@@ -11,8 +11,8 @@ num_occur = cellfun(@(char_occur, password) sum(password == char_occur),...
 
 sum( min_occur <= num_occur & num_occur <= max_occur)
 
-%% Part 2
 
+%% Part 2
 fid = fopen('input2.txt','r');
 data = textscan(fid, ['%d' double('-') '%d' '%c' double(':') '%s'], [Inf 4]);
 occur1 = num2cell(data{1});

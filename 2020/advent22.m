@@ -1,4 +1,4 @@
-
+%% Part 1
 data = readmatrix('test.txt');
 data = reshape(rmmissing(data),[],2);
 p1 = data(:,1);

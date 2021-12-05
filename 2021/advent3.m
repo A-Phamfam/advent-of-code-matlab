@@ -7,6 +7,7 @@ gamma = bin2dec(num2str(common_bits));
 epsilon = bin2dec(num2str(~common_bits));
 gamma * epsilon
 
+
 %% Part 2
 data = readlines("input3.txt");
 data = double( data.split("") );

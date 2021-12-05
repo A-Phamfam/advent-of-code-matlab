@@ -14,8 +14,8 @@ stop_location = sub2ind( size(istree), vert, horz );
 
 sum(istree(stop_location))
 
-%% Part 2
 
+%% Part 2
 fid = fopen('input3.txt','r');
 data = textscan(fid,'%s');
 s = cellfun(@(x) double(x), data{1}, UniformOutput=false);

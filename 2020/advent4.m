@@ -8,7 +8,6 @@ sum(valid)
 
 
 %% Part 2
-
 data = readcell("input4.txt",Delimiter='',LineEnding='\n\r')
 
 x = regexp(data{1}, "([a-z]{3})[:]([a-z0-9]+)", 'tokens')
