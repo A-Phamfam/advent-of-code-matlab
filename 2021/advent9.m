@@ -17,14 +17,19 @@ prod(basinSize(end-2:end))
 figure;
 pcolor(data);
 shading flat
+colormap(jet)
 
 figure;
 pcolor(~(data < 9));
 shading flat;
+colormap(jet)
+
 
 figure;
 pcolor(~imregionalmin(data,4))
 shading flat;
+colormap(jet)
+
 
 %% Part 1 Manual
 data = readlines("input9.txt").split("");
